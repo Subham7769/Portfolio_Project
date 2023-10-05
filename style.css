@@ -1,0 +1,179 @@
+html{
+    scroll-snap-type: y mandatory;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+header{
+    position: fixed;
+    top: 0rem;
+    width: 100vw;
+    z-index: 100000000;
+    /* background-color: #333333; */
+    background-color: transparent;
+}
+
+.navbar-brand{
+    color: white!important;
+}
+.nav-link{
+    color: white!important;
+}
+.nav-link:hover{
+    border-radius: 3px;
+    text-decoration: underline;
+    text-underline-offset: 0.6em;
+    font-weight: 600;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    padding: 1.5rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    /* font-size: 10rem; */
+}
+.hero{
+    background: url(https://images.unsplash.com/photo-1607499699372-7bb722dff7e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80) no-repeat center center / cover fixed;
+    position: relative;
+    /* background-color: rgb(2, 26, 26); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+h1{
+    font-size: 10vw;
+    margin: 0;
+    background-image: url(https://th.bing.com/th/id/OIP.8EqUdFXMeB97k3EXPh0KAwHaEo?pid=ImgDet&rs=1);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+.hero>p{
+    font-size: 1.5rem;
+    color: white;
+    width: 50%;
+}
+.about {
+    background-color: orangered;
+    color: black;
+}
+.value {
+    background-color: rgb(2, 2, 76);
+    color: rgb(225, 242, 245);
+}
+.skills {
+    background-color:gold;
+    color: black;
+}
+.certificate {
+    background-color:rgb(55, 4, 103);
+    color: white;
+}
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    background-color:#5d5d5e;
+    color: white;
+}
+.project-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 0.2;
+    overflow-y: scroll;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    height: 80vh;
+    min-width: 15rem;
+    /* border: 1px solid red; */
+
+}
+.project-list::-webkit-scrollbar{
+    display: none;
+}
+.project-list>a{
+    text-decoration: none;
+    color: black;
+}
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 15rem;
+    height: 17rem;
+    border-radius: 0.5rem;
+    background-image: url(./Assets/cookpal.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  .project-title {
+    rotate: 1 0 0 90deg;
+  }
+  .project-card:hover .project-title {
+    transform: rotateX(-90deg);
+  }
+
+  .project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(197, 197, 197);
+    opacity: 0.8;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+  .project-Preview{
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .project-Preview>a{
+    font-family: inherit;
+    font-weight: 800;
+    text-decoration: none;
+    color: green;
+  }
+
+  .project-show {
+    flex: 0.75;
+    height: 80vh;
+    /* border: 1px solid red; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+.project-show::-webkit-scrollbar{
+    display: none;
+}
+
+.education {
+    /* background-color: #D10000; */
+    color: white;
+}
+
+footer{
+    background: url(https://images.unsplash.com/photo-1607499699372-7bb722dff7e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80) no-repeat center center / cover fixed;
+
+}

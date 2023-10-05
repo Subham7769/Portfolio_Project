@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open Link in a Div</title>
+    <style>
+      .project-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 15rem;
+        height: 17rem;
+        border-radius: 0.5rem;
+        background-image: url(https://source.unsplash.com/400x400/?cat);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .project-title {
+        rotate: 1 0 0 90deg;
+      }
+      .project-card:hover .project-title {
+        transform: rotateX(-90deg);
+      }
+
+      .project-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        width: 8rem;
+        height: 8rem;
+        background-color: rgb(230, 230, 230);
+        clip-path: circle(50% at 50% 50%);
+        transition: transform 0.3s ease-out;
+      }
+      .project-Preview{
+        text-align: center;
+        padding: 2.5rem;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+      }
+      .project-Preview>a{
+        font-family: inherit;
+        font-weight: 600;
+        text-decoration: none;
+        color: black;
+      }
+
+      .project-show {
+        flex: 0.75;
+        height: 80vh;
+        border: 1px solid red;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+
+      <div class="project-card">
+        <div class="project-title">
+            <div class="project-Preview">
+                <a href="https://subham7769.github.io/Cookpal_Menu_Catalogue/" id="projectLink" target="project-show">Live Preview</a>
+            </div>
+        </div>
+      </div>
+
+    <div id="project-show">
+      <!-- The content of the div -->
+    </div>
+    <script>
+      // JavaScript to load the link inside the div
+      let project = document.getElementById("projectLink");
+      project.addEventListener("click", function (e) {
+        if (
+          e.target.tagName === "A" &&
+          e.target.getAttribute("target") === "project-show"
+        ) {
+          e.preventDefault(); // Prevent the link from opening in a new page
+          var link = e.target.getAttribute("href");
+          var projectShow = document.getElementById("project-show");
+          projectShow.innerHTML = `<iframe src="${link}" width="100%" height="100%"></iframe>`;
+        }
+      });
+    </script>
+  </body>
+</html>
