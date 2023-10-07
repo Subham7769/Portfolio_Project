@@ -243,11 +243,12 @@ td {
 }
 
 /* ******************************Skills Section************************************* */
+
 .skills {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#131212 ;
+  background-color: #131212;
   color: white;
 }
 .skills-container {
@@ -371,7 +372,7 @@ td {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.3rem;
-  background-color:#131212 ;
+  background-color: #131212;
   color: white;
 }
 .project-list {
@@ -403,6 +404,48 @@ td {
   width: 90%;
   height: 17rem;
   border-radius: 0.5rem;
+}
+.project-title {
+  rotate: 1 0 0 90deg;
+}
+.project-card:hover .project-title {
+  transform: rotateX(-90deg);
+}
+.project-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgb(53, 53, 53);
+  opacity: 0.8;
+  clip-path: circle(50% at 50% 50%);
+  transition: all 0.3s ease-out;
+}
+.project-Preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+}
+.project-Preview > a {
+  font-weight: 800;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.project-show {
+  flex: 0.75;
+  height: 80vh;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.project-show::-webkit-scrollbar {
+  display: none;
 }
 .Cookpal {
   background-image: url(./Assets/Project/cookpal.png);
@@ -453,51 +496,9 @@ td {
   background-size: cover;
 }
 
-.project-title {
-  rotate: 1 0 0 90deg;
-}
-.project-card:hover .project-title {
-  transform: rotateX(-90deg);
-}
-.project-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  width: 8rem;
-  height: 8rem;
-  background-color: rgb(53, 53, 53);
-  opacity: 0.8;
-  clip-path: circle(50% at 50% 50%);
-  transition: all 0.3s ease-out;
-}
-.project-Preview {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
-  width: 80%;
-  height: 100%;
-}
-.project-Preview > a {
-  font-weight: 800;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-.project-show {
-  flex: 0.75;
-  height: 80vh;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-.project-show::-webkit-scrollbar {
-  display: none;
-}
-
 /* Hire Me Button */
 .Hire {
+  display: none;
   padding: 10px 15px;
   position: fixed;
   top: 10px;
@@ -597,22 +598,127 @@ input[type="submit"]:hover {
     font-weight: 500;
   }
 
+  /* ***********************************Hero section******************************* */
+
+  section {
+    padding: 0.5rem;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .inner-section {
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+  }
+  .profile {
+    margin-top: 2.5rem;
+    flex: 0.4;
+    order: 1;
+  }
+  .intro {
+    flex: 0.6;
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+  .intro > p {
+    font-size: 1rem;
+  }
+  .intro > h1 {
+    font-size: 1.5rem;
+  }
+  .resume {
+    position: static;
+    margin: 0rem;
+    margin-top: 12rem;
+  }
+
+  /* ******************************About Section************************************* */
+  .about {
+flex-direction: column;
+  }
+  .about-container {
+    margin-top: 2rem;
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid red; */
+    padding: 0rem;
+  }
+  .details {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 0rem;
+    /* border: 1px solid red; */
+  }
+  .profile-img {
+    display: none;
+  }
+  .about-intro {
+    padding: 0.2rem;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    overflow-y: scroll;
+  }
+  .about-table,  .about-intro>h5,hr {
+    /* display: none; */
+    font-size: 0.4rem;
+  }
+
+  /* ******************************Value Section************************************* */
+
+  .value-container {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90vw;
+    height: 80vh;
+    border: 1px solid red;
+    padding: 0rem;
+    overflow-y: scroll;
+
+  }
+  .value-details {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    /* border: 1px solid red; */
+  }
+  .value-card {
+    display: flex;
+    height: 90%;
+    width: 100%;
+    border-radius: 0.5rem;
+    /* border: 1px solid red; */
+    overflow: hidden;
+  }
+  .value-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .value-text-body {
+    display: none;
+  }
+
+  
+
   /* ******************************Skills Section************************************* */
   .skills-container {
-    margin-top: 2rem;
+    margin-top: 0rem;
     gap: 0.5rem;
     width: 100%;
     height: 90%;
-    padding: 0.3rem;
   }
   .Skills-card {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 0.2rem;
   }
   .Skills-card > img {
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   /* ********************************Project Section************************************ */
@@ -621,7 +727,7 @@ input[type="submit"]:hover {
     flex-direction: column;
   }
   .project-list {
-    margin-top: 2rem;
+    margin-top: 2.3rem;
     flex-direction: row;
     justify-content: flex-start;
     overflow-x: scroll;
@@ -660,17 +766,17 @@ input[type="submit"]:hover {
     flex-direction: row;
     justify-content: flex-start;
     overflow-x: scroll;
-    flex: 0.3;
-    padding: 0.1rem;
+    flex: 0.25;
+    padding: 0rem;
     width: 100%;
   }
   .certificate-card {
-    height: 90%;
-    width: 5rem;
+    height: 80%;
+    width: 4rem;
   }
   .certificate-title {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
   }
   .certificate-Preview {
     width: 80%;
@@ -682,8 +788,8 @@ input[type="submit"]:hover {
     font-size: rem;
   }
   .certificate-show {
-    margin-top: 2rem;
-    flex: 0.65;
+    margin-top: 3rem;
+    flex: 0.;
     width: 100%;
   }
 }
