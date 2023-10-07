@@ -330,7 +330,7 @@ padding: 0.4rem;
     width: 90%;
     height: 17rem;
     border-radius: 0.5rem;
-    background-image: url(./Assets/Project/cookpal.png);
+    background-image: url(./Assets/Resume/folder_1975643.png);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -417,7 +417,46 @@ padding: 0.4rem;
   width: 90%;
   height: 17rem;
   border-radius: 0.5rem;
+
+}
+.Cookpal{
   background-image: url(./Assets/Project/cookpal.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Blinkit{
+  background-image: url(./Assets/Project/Blinkit.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Jira{
+  background-image: url(./Assets/Project/Jira.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Acciojob{
+  background-image: url(./Assets/Project/Acciojob.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.FoodDelivery{
+  background-image: url(./Assets/Project/FoodDelivery.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Spotify{
+  background-image: url(./Assets/Project/Spotify.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Timer{
+  background-image: url(./Assets/Project/Timer.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -503,9 +542,9 @@ padding: 0.4rem;
 
 form {
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 400px;
-  height: 300px;
+ 
 }
 
 input[type="email"] {
