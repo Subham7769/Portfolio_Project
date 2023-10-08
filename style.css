@@ -317,7 +317,7 @@ td {
   width: 90%;
   height: 17rem;
   border-radius: 0.5rem;
-  background-image: url(./Assets/heading.png);
+  background-image: url(./Assets/icon/file.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -686,7 +686,7 @@ flex-direction: column;
     gap: 0.5rem;
     width: 90vw;
     height: 80vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0rem;
     overflow-y: scroll;
 
