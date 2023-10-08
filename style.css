@@ -317,7 +317,19 @@ td {
   width: 90%;
   height: 17rem;
   border-radius: 0.5rem;
-  background-image: url(./Assets/Resume/folder_1975643.png);
+  background-image: url(./Assets/heading.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Soft_Skills{
+  background-image: url(./Assets/Certificates/Certificate-img/SoftSkills.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.Presentaion{
+  background-image: url(./Assets/Certificates/Certificate-img/Presentation.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
