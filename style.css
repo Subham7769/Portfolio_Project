@@ -15,7 +15,7 @@ header {
   top: 0rem;
   width: 100vw;
   z-index: 100000000;
-  /* background-color: #333333; */
+  background-color: #333333;
   background-color: transparent;
 }
 .navbar-brand {
@@ -39,31 +39,6 @@ section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
-/* .hero {
-  background: url(./Assets/hero_bg.png)
-    no-repeat center center / cover fixed;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-h1 {
-  font-size: 10vw;
-  margin: 0;
-  background-image: url(https://th.bing.com/th/id/OIP.8EqUdFXMeB97k3EXPh0KAwHaEo?pid=ImgDet&rs=1);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.hero > p {
-  font-size: 1.5rem;
-  color: white;
-  width: 50%;
-} */
-
 .hero {
   background-color: #000000;
   position: relative;
@@ -527,65 +502,86 @@ td {
   font-weight: 700;
   transform: scale(1.1);
 }
-.social-tag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  background-color: black;
-  margin: 10px;
-}
+
 /* ******************************Contact Section***************************************** */
 #Contact {
-  background: url(./Assets/hero_bg.png) no-repeat center center / cover fixed;
-  color: white;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.box{
+  margin-top: 2rem;
+  border-radius: 5px;
+  width: 60vw;
+  height: 80vh;
+  background-color: white;
+}
+.Get_in_Touch{
+  width: 50%;
+  height: 65vh;
+  margin-left: -5rem;
+  border: none !important;
+  padding: 1.5rem;
+  background-color: orange;
 
-.form-container {
+}
+.photo-album{
+  width: 100%;
+  height: 20%;
+}
+.Get_in_Touch >ul>li{
+  list-style-type: none;
+  margin: 1rem;
+
+}
+.photo-album>ul>li{
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  font-size: 2rem;
+  text-align: center;
+}
+.Form-area{
+  width:55%;
+  height: 80%;
+  margin-left: 3rem;
+}
+#contactForm{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(63, 69, 104, 0.568); /* Translucent white background */
-  border-radius: 10px;
-  padding: 1rem;
-  width: 400px;
-  height: 300px;
-}
-
-form {
-  text-align: center;
-  /* border: 1px solid red; */
-  width: 400px;
-}
-
-input[type="email"] {
+  gap: 0.5rem;
   width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
+  text-align: center;
+  padding: 1rem;
+
+}
+input[type=text], input[type=email],input[type=submit],textarea{
+padding: 10px;
+width: 90%;
+border-radius: 0.3rem;
+border: 1px solid orange;
+}
+input[type=submit]{
+  background-color: orange;
+}
+.Social-Icon{
+  width: 100%;
+  height: auto;
+}
+.photo-album>ul>:hover{
+  box-shadow: 0px 0px 10px black!important;
+  background-color: orange;
 }
 
-input[type="submit"] {
-  background-color: orange; /* Green button color */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-  font-weight: 700;
-}
 
-input[type="submit"]:hover {
-  transform: scale(1.1); /* Darker green on hover */
-}
+
+/* ******************************************************************************************** */
 
 @media only screen and (max-width: 768px) {
   /* *************************************header section***************************** */
@@ -775,6 +771,7 @@ flex-direction: column;
     flex-direction: column;
   }
   .certificate-list {
+    margin-top: 3rem;
     flex-direction: row;
     justify-content: flex-start;
     overflow-x: scroll;
@@ -800,8 +797,52 @@ flex-direction: column;
     font-size: rem;
   }
   .certificate-show {
-    margin-top: 3rem;
     flex: 0.;
     width: 100%;
   }
+
+  /* ******************************Contact Section***************************************** */
+#Contact {
+  flex-direction: column;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 2rem;
+  width: 90vw;
+  padding: 0.5rem;
+  overflow-y: scroll;
+}
+.Get_in_Touch{
+  width: 90%;
+  height: auto;
+  margin: 0;
+  padding: 1.5rem;
+  background-color: orange;
+  font-size: 0.8rem;
+}
+.Form-area{
+  height: auto;
+  width:90%;
+  margin: 0rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+#contactForm{
+  width: 100%;
+}
+
+input[type=submit]{
+  background-color: orange;
+}
+.Social-Icon{
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+
+
 }
