@@ -39,17 +39,36 @@ section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
-.hero {
-  background-color: #000000;
-  position: relative;
+.hero,
+.inner-section,
+.profile,
+.about,
+.details,
+.value,
+.value-details,
+.skills,
+.skills-container,
+.certificate,
+.certificate-list,
+.certificate-card,
+.certificate-title,
+.certificate-Preview,
+.project,
+.project-list,
+.project-card,
+.project-title,
+.project-Preview,
+#Contact,
+#contactForm {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.hero {
+  background-color: #000000;
+  position: relative;
+}
 .inner-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* border: 1px solid red; */
 }
 .intro {
@@ -57,15 +76,12 @@ section {
   flex: 0.4;
   height: 60vh;
   position: relative;
-}
-.intro > p {
   color: white;
 }
 .intro > h1 {
   font-size: 3rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
   font-weight: 700;
 }
 .intro > h1 > span {
@@ -76,9 +92,6 @@ section {
   height: 70vh;
   width: 50%;
   /* border: 1px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .profile > img {
   height: 100%;
@@ -103,13 +116,11 @@ section {
 
 /* ****************************About Us section**************************** */
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: rgb(19, 18, 18);
   color: white;
 }
-.about-container {
+.about-container,
+.value-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -120,9 +131,6 @@ section {
   padding: 0.8rem;
 }
 .details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 2rem;
   height: 90%;
   width: 100%;
@@ -161,26 +169,11 @@ td {
 
 /* *****************************Value preposition section************************************* */
 .value {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #000000;
   color: white;
 }
-.value-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  width: 90vw;
-  height: 80vh;
-  /* border: 1px solid red; */
-  padding: 0.8rem;
-}
 .value-details {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
   height: 90%;
@@ -220,16 +213,10 @@ td {
 /* ******************************Skills Section************************************* */
 
 .skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #131212;
   color: white;
 }
 .skills-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
   width: 80%;
@@ -254,20 +241,17 @@ td {
 }
 
 /* *******************************Certificates Section******************************** */
-.certificate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.certificate,
+.project {
   flex-wrap: wrap;
   gap: 0.3rem;
   /* background-color: rgb(55, 4, 103); */
   background-color: #000000;
   color: white;
 }
-.certificate-list {
-  display: flex;
+.certificate-list,
+.project-list {
   justify-content: flex-start;
-  align-items: center;
   flex-direction: column;
   gap: 0.8rem;
   flex: 0.2;
@@ -277,17 +261,17 @@ td {
   height: 80vh;
   min-width: 12rem;
 }
-.certificate-list::-webkit-scrollbar {
+.certificate-list::-webkit-scrollbar,
+.project-list::-webkit-scrollbar {
   display: none;
 }
-.certificate-list > a {
+.certificate-list > a,
+.project-list > a {
   text-decoration: none;
   color: black;
 }
-.certificate-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.certificate-card,
+.project-card {
   flex-shrink: 0;
   width: 90%;
   height: 17rem;
@@ -297,111 +281,21 @@ td {
   background-position: top;
   background-size: cover;
 }
-.Soft_Skills{
+.Soft_Skills {
   background-image: url(./Assets/Certificates/Certificate-img/SoftSkills.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
-.Presentaion{
+.Presentaion {
   background-image: url(./Assets/Certificates/Certificate-img/Presentation.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
-.certificate-title {
-  rotate: 1 0 0 90deg;
+.Business_Atiquette {
+  background-image: url(./Assets/Certificates/Certificate-img/Business_Atiquette.png);
 }
-.certificate-card:hover .certificate-title {
-  transform: rotateX(-90deg);
-}
-.certificate-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  width: 8rem;
-  height: 8rem;
-  background-color: rgb(53, 53, 53);
-  opacity: 0.8;
-  clip-path: circle(50% at 50% 50%);
-  transition: all 0.3s ease-out;
-}
-.certificate-Preview {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
-  width: 80%;
-  height: 100%;
-}
-.certificate-Preview > a {
-  font-weight: 800;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-.certificate-show {
-  flex: 0.75;
-  height: 80vh;
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-.certificate-show::-webkit-scrollbar {
-  display: none;
-}
-
-/* ********************************Project Section************************************ */
-.project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-  background-color: #131212;
-  color: white;
-}
-.project-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.8rem;
-  flex: 0.2;
-  overflow-y: scroll;
-  padding: 0.2rem;
-  border-radius: 0.5rem;
-  height: 80vh;
-  min-width: 12rem;
-}
-.project-list::-webkit-scrollbar {
-  display: none;
-}
-.project-list > a {
-  text-decoration: none;
-  color: black;
-}
-.project-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  flex-shrink: 0;
-  width: 90%;
-  height: 17rem;
-  border-radius: 0.5rem;
-}
-.project-title {
-  rotate: 1 0 0 90deg;
-}
+.certificate-card:hover .certificate-title,
 .project-card:hover .project-title {
   transform: rotateX(-90deg);
 }
+.certificate-title,
 .project-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   text-transform: uppercase;
   width: 8rem;
@@ -410,77 +304,61 @@ td {
   opacity: 0.8;
   clip-path: circle(50% at 50% 50%);
   transition: all 0.3s ease-out;
+  rotate: 1 0 0 90deg;
 }
+.certificate-Preview,
 .project-Preview {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   text-align: center;
   width: 80%;
   height: 100%;
 }
+.certificate-Preview > a,
 .project-Preview > a {
   font-weight: 800;
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+.certificate-show,
 .project-show {
   flex: 0.75;
   height: 80vh;
   border-radius: 0.5rem;
   overflow: hidden;
 }
+.certificate-show::-webkit-scrollbar,
 .project-show::-webkit-scrollbar {
   display: none;
 }
+
+/* ********************************Project Section************************************ */
+.project {
+  background-color: #131212;
+  color: white;
+}
 .Cookpal {
   background-image: url(./Assets/Project/cookpal.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 .Blinkit {
   background-image: url(./Assets/Project/Blinkit.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 .Jira {
   background-image: url(./Assets/Project/Jira.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 .Acciojob {
   background-image: url(./Assets/Project/Acciojob.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 .FoodDelivery {
   background-image: url(./Assets/Project/FoodDelivery.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 .Spotify {
   background-image: url(./Assets/Project/Spotify.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 .Timer {
   background-image: url(./Assets/Project/Timer.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 .GoogleSheet {
   background-image: url(./Assets/Project/GoogleSheet.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
 }
 
 /* Hire Me Button */
@@ -506,36 +384,31 @@ td {
 /* ******************************Contact Section***************************************** */
 #Contact {
   background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.box{
+.box {
   margin-top: 2rem;
   border-radius: 5px;
   width: 60vw;
   height: 80vh;
   background-color: white;
 }
-.Get_in_Touch{
+.Get_in_Touch {
   width: 50%;
   height: 65vh;
   margin-left: -5rem;
   border: none !important;
   padding: 1.5rem;
   background-color: orange;
-
 }
-.photo-album{
+.photo-album {
   width: 100%;
   height: 20%;
 }
-.Get_in_Touch >ul>li{
+.Get_in_Touch > ul > li {
   list-style-type: none;
   margin: 1rem;
-
 }
-.photo-album>ul>li{
+.photo-album > ul > li {
   list-style-type: none;
   display: inline-block;
   width: 50px;
@@ -545,41 +418,38 @@ td {
   font-size: 2rem;
   text-align: center;
 }
-.Form-area{
-  width:55%;
+.Form-area {
+  width: 55%;
   height: 80%;
   margin-left: 3rem;
 }
-#contactForm{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#contactForm {
   flex-direction: column;
   gap: 0.5rem;
   width: 90%;
   text-align: center;
   padding: 1rem;
-
 }
-input[type=text], input[type=email],input[type=submit],textarea{
-padding: 10px;
-width: 90%;
-border-radius: 0.3rem;
-border: 1px solid orange;
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  padding: 10px;
+  width: 90%;
+  border-radius: 0.3rem;
+  border: 1px solid orange;
 }
-input[type=submit]{
+input[type="submit"] {
   background-color: orange;
 }
-.Social-Icon{
+.Social-Icon {
   width: 100%;
   height: auto;
 }
-.photo-album>ul>:hover{
-  box-shadow: 0px 0px 10px black!important;
+.photo-album > ul > :hover {
+  box-shadow: 0px 0px 10px black !important;
   background-color: orange;
 }
-
-
 
 /* ******************************************************************************************** */
 
@@ -611,11 +481,18 @@ input[type=submit]{
   section {
     padding: 0.5rem;
   }
-  .hero {
+  .hero,
+  .inner-section,
+  .about,
+  .details,
+  .value-container,
+  .value-details,
+  .project,
+  .certificate,
+  #Contact,.box {
     flex-direction: column;
   }
   .inner-section {
-    flex-direction: column;
     width: 90vw;
     height: 90vh;
   }
@@ -643,9 +520,7 @@ input[type=submit]{
   }
 
   /* ******************************About Section************************************* */
-  .about {
-flex-direction: column;
-  }
+
   .about-container {
     margin-top: 2rem;
     width: 100%;
@@ -655,7 +530,6 @@ flex-direction: column;
   }
   .details {
     font-size: 0.8rem;
-    flex-direction: column;
     gap: 0rem;
     /* border: 1px solid red; */
   }
@@ -669,7 +543,9 @@ flex-direction: column;
     /* border: 1px solid blue; */
     overflow-y: scroll;
   }
-  .about-table,  .about-intro>h5,hr {
+  .about-table,
+  .about-intro > h5,
+  hr {
     /* display: none; */
     font-size: 0.4rem;
   }
@@ -678,17 +554,14 @@ flex-direction: column;
 
   .value-container {
     margin-top: 3rem;
-    flex-direction: column;
     gap: 0.5rem;
     width: 90vw;
     height: 80vh;
     /* border: 1px solid red; */
     padding: 0rem;
     overflow-y: scroll;
-
   }
   .value-details {
-    flex-direction: column;
     flex-wrap: nowrap;
     gap: 0.5rem;
     /* border: 1px solid red; */
@@ -710,8 +583,6 @@ flex-direction: column;
     display: none;
   }
 
-  
-
   /* ******************************Skills Section************************************* */
   .skills-container {
     margin-top: 0rem;
@@ -730,11 +601,10 @@ flex-direction: column;
   }
 
   /* ********************************Project Section************************************ */
-  .project {
+  .project,.certificate {
     flex-wrap: nowrap;
-    flex-direction: column;
   }
-  .project-list {
+  .project-list,.certificate-list {
     margin-top: 2.3rem;
     flex-direction: row;
     justify-content: flex-start;
@@ -743,106 +613,64 @@ flex-direction: column;
     padding: 0.1rem;
     width: 100%;
   }
-  .project-card {
+  .project-card,.certificate-card {
     height: 90%;
     width: 5rem;
   }
-  .project-title {
-    width: 4rem;
-    height: 4rem;
+  .project-title,.certificate-title {
+    width: 3rem;
+    height: 3rem;
   }
-  .project-Preview {
+  .project-Preview,.certificate-Preview {
     width: 80%;
     height: 100%;
   }
-  .project-Preview > a {
+  .project-Preview > a,.certificate-Preview > a {
     font-size: 0.7rem;
     font-weight: 500;
     font-size: rem;
   }
-  .project-show {
+  .project-show,.certificate-show {
     flex: 0.65;
     width: 100%;
   }
 
-  /* *******************************Certificates Section******************************** */
-  .certificate {
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-  .certificate-list {
-    margin-top: 3rem;
-    flex-direction: row;
-    justify-content: flex-start;
-    overflow-x: scroll;
-    flex: 0.25;
-    padding: 0rem;
-    width: 100%;
-  }
-  .certificate-card {
-    height: 80%;
-    width: 4rem;
-  }
-  .certificate-title {
-    width: 3rem;
-    height: 3rem;
-  }
-  .certificate-Preview {
-    width: 80%;
-    height: 100%;
-  }
-  .certificate-Preview > a {
-    font-size: 0.7rem;
-    font-weight: 500;
-    font-size: rem;
-  }
-  .certificate-show {
-    flex: 0.;
-    width: 100%;
-  }
 
   /* ******************************Contact Section***************************************** */
-#Contact {
-  flex-direction: column;
-}
-.box{
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  margin-top: 2rem;
-  width: 90vw;
-  padding: 0.5rem;
-  overflow-y: scroll;
-}
-.Get_in_Touch{
-  width: 90%;
-  height: auto;
-  margin: 0;
-  padding: 1.5rem;
-  background-color: orange;
-  font-size: 0.8rem;
-}
-.Form-area{
-  height: auto;
-  width:90%;
-  margin: 0rem;
-  margin-top: 2rem;
-  text-align: center;
-}
-#contactForm{
-  width: 100%;
-}
 
-input[type=submit]{
-  background-color: orange;
-}
-.Social-Icon{
-  width: auto;
-  height: auto;
-  margin: 0;
-}
+  .box {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    width: 90vw;
+    padding: 0.5rem;
+    overflow-y: scroll;
+  }
+  .Get_in_Touch {
+    width: 90%;
+    height: auto;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: orange;
+    font-size: 0.8rem;
+  }
+  .Form-area {
+    height: auto;
+    width: 90%;
+    margin: 0rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  #contactForm {
+    width: 100%;
+  }
 
-
-
+  input[type="submit"] {
+    background-color: orange;
+  }
+  .Social-Icon {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
 }
