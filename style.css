@@ -360,6 +360,9 @@ td {
 .GoogleSheet {
   background-image: url(./Assets/Project/GoogleSheet.png);
 }
+.Otarea {
+  background-image: url(./Assets/Project/Otarea.png);
+}
 
 /* Hire Me Button */
 .Hire {
@@ -451,7 +454,7 @@ input[type="submit"] {
   background-color: orange;
 }
 
-/* ******************************************************************************************** */
+/********************************************************************************************* */
 
 @media only screen and (max-width: 768px) {
   /* *************************************header section***************************** */
