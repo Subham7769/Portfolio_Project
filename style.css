@@ -68,9 +68,6 @@ section {
   background-color: #000000;
   position: relative;
 }
-.inner-section {
-  /* border: 1px solid red; */
-}
 .intro {
   /* border: 1px solid red; */
   flex: 0.4;
@@ -362,6 +359,9 @@ td {
 }
 .Otarea {
   background-image: url(./Assets/Project/Otarea.png);
+}
+.todolist {
+  background-image: url(./Assets/Project/todolist.png);
 }
 
 /* Hire Me Button */
